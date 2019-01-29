@@ -2,7 +2,7 @@
 set ruler laststatus=2 number title hlsearch autoindent showtabline=2 nocp
 syntax on
 filetype indent plugin on
-colorscheme synthetic
+colorscheme jellybeans
 execute pathogen#infect()
 
 set statusline+=%#warningmsg#
