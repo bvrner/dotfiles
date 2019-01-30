@@ -1,3 +1,3 @@
-# config
+# dotfiles
 
-Just my personal config files for polybar, i3-gaps, urxvt and Vim.
+Just my personal dotfiles files for polybar, i3-gaps, urxvt and Vim.
