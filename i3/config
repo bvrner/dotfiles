@@ -100,7 +100,7 @@ set $ws3 "3. Coding"
 set $ws4 "4. Terminals"
 set $ws5 "5. Music"
 set $ws6 "6. Multimedia"
-set $ws7 "7"
+set $ws7 "7. General"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -183,9 +183,13 @@ client.urgent 		$urgent-bg-color    $urgent-bg-color   $text-color #00ff00
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
+gaps inner 5
+gaps outer 5
 
+# Edit acording to your needs
 bindsym $mod+shift+x exec i3lock
 exec discord
-exec_always feh --bg-scale /home/fenrisulfr/Imagens/Wallpaper/'uskr0ee - Imgur.jpg'
+exec compton
+exec_always feh --bg-scale /home/fenrisulfr/Imagens/e3vx0LK.png'
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 for_window [class="^.*"] border pixel 0
