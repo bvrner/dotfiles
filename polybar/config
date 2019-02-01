@@ -17,9 +17,9 @@
 ;==========================================================
 
 [colors]
-background = #16060B
+background = #0d0d0d
 background-alt = #0C0C0C
-foreground = #798D8F
+foreground = #f2f2f2
 foreground-alt = #555
 primary = #000f1ff
 secondary = #016138
@@ -58,8 +58,8 @@ font-5 = "Font Awesome 5 Free:style=Solid:size=10;-1"
 font-6 = "Font Awesome 5 Brands:style=Regular:size=10;-1"
 
 modules-left = bspwm
-modules-center = 
-modules-right = date powermenu
+modules-center = player-cmus
+modules-right = date pulseaudio-tail powermenu 
 
 tray-position = right
 tray-padding = 2
@@ -129,12 +129,12 @@ wrapping-scroll = false
 reverse-scroll = false
 fuzzy-match = true
 
-ws-icon-0 = Discord;
-ws-icon-1 = Browser;
-ws-icon-2 = Terminal;
-ws-icon-3 = File;
-ws-icon-4 = Games;
-ws-icon-5 = Musics;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
 ws-icon-default = 
 
 format = <label-state> <label-mode>
@@ -202,6 +202,25 @@ menu-2-0-padding = 3
 [module/date]
 type = internal/date
 
+interval = 1.0
+date = %Y-%m-%d%
+
+time = %H:%M
+
+date-alt = %A, %d %B %Y
+time-alt = %H:%M:%S
+
+format =    <label>
+format-background = #0d0d0d
+format-foreground = #fff
+
+label = %time%
+label-font = 3
+label-foreground = #FFFFFF
+
+[module/date-alt]
+type = internal/date
+
 ; Seconds to sleep between updates
 interval = 1.0
 
@@ -223,3 +242,20 @@ format =    <label>
 format-background = #88000000
 ;format-foreground = #333
 format-padding = 3
+
+[module/player-cmus]
+type = custom/script
+exec = ~/polybar-scripts/player-cmus.sh
+interval = 5
+click-left = cmus-remote -n
+click-right = cmus-remote -r
+click-middle = cmus-remote -u
+
+[module/pulseaudio-tail]
+type = custom/script
+exec = ~/polybar-scripts/pulseaudio-tail.sh
+tail = true
+click-right = exec pavucontrol &
+click-left = ~/polybar-scripts/pulseaudio-tail.sh --mute
+scroll-up = ~/polybar-scripts/pulseaudio-tail.sh --up
+scroll-down = ~/polybar-scripts/pulseaudio-tail.sh --down
