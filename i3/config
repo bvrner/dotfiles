@@ -29,8 +29,8 @@ font pango: Source Code Pro 10
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# start a terminal. default: i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -94,13 +94,13 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1. Browser"
-set $ws2 "2. Discord"
-set $ws3 "3. Coding"
-set $ws4 "4. Terminals"
-set $ws5 "5. Music"
-set $ws6 "6. Multimedia"
-set $ws7 "7. General"
+set $ws1 "Discord"
+set $ws2 "Browser"
+set $ws3 "Terminal"
+set $ws4 "File"
+set $ws5 "Games"
+set $ws6 "Musics"
+set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -130,8 +130,18 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # open softwares in determined workspaces
-assign [class="discord"] $ws2
-assign [class="Terminator"] $ws4
+assign [class="discord"] $ws1
+assign [class="firefox"] $ws2
+assign [class="URxvt"] $ws3
+assign [class="thunar"] $ws4
+assign [class="Steam"] $ws5
+
+# shortcut applications
+bindsym $mod+F1 workspace $ws3; exec urxvt -e vim
+bindsym $mod+F2 workspace $ws2; exec firefox
+bindsym $mod+F3 workspace $ws4; exec thunar
+bindsym $mod+F4 workspace $ws6; exec urxvt -e cmus
+bindsym $mod+F5 workspace $ws5; exec steam
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -188,8 +198,9 @@ gaps outer 5
 
 # Edit acording to your needs
 bindsym $mod+shift+x exec i3lock
+bindsym Print exec xfce4-screenshooter
 exec discord
 exec compton
-exec_always feh --bg-scale /home/fenrisulfr/Imagens/e3vx0LK.png'
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always feh --bg-scale ~/Imagens/e3vx0LK.png
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 for_window [class="^.*"] border pixel 0

@@ -16,33 +16,31 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #16060B
 background-alt = #0C0C0C
-;foreground = ${xrdb:color7:#222}
 foreground = #798D8F
 foreground-alt = #555
 primary = #000f1ff
 secondary = #016138
 alert = #ff019a
+blue  = #244E64
+white = #FFFFFF
 
 [bar/cyber]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 27
-;offset-x = 1%
-;offset-y = 1%
 radius = 6.0
 fixed-center = false
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = 0d0d0d
+foreground = f2f2f2
 
-line-size = 3
+line-size = 5
 line-color = #f00
 
-border-size = 4
-border-color = #00000000
+border-size = 2
+border-color = #440669
+;ff019a
 
 padding-left = 0
 padding-right = 2
@@ -50,29 +48,25 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-font-3 = FontAwesome:pixelsize=14;0
+font-0 = fixed:pixelsize=10;0
+font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
+font-2 = siji:pixelsize=10;0
+font-3 = FontAwesome:pixelsize=10;0
+font-4 = "Font Awesome 5 Free:style=Regular:size=10;0"
+font-5 = "Font Awesome 5 Free:style=Solid:size=10;0"
+font-6 = "Font Awesome 5 Brands:style=Regular:size=10;0"
 
 modules-left = i3
-modules-center = 
-modules-right = player-cmus pulseaudio-simple date
+modules-center = date
+modules-right = player-cmus pulseaudio powermenu
 
 tray-position = right
 tray-padding = 2
-;tray-background = #0063ff
 
-;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -107,46 +101,52 @@ label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
-
-; Separator in between workspaces
-; label-separator = |
-
 [module/i3]
 type = internal/i3
-format = <label-state> <label-mode>
+
+pin-workspaces = true
+strip-wsnumbers = true
 index-sort = true
+enable-click = true
+enable-scroll = false
 wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = true
 
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+ws-icon-0 = Discord;
+ws-icon-1 = Browser;
+ws-icon-2 = Terminal;
+ws-icon-3 = File;
+ws-icon-4 = Games;
+ws-icon-5 = Musics;
+ws-icon-default = 
 
+format = <label-state> <label-mode>
+
+label-mode = %mode%
 label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
+label-mode-background = #e60053
 
-; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${module/bspwm.label-focused-background}
-label-focused-underline = ${module/bspwm.label-focused-underline}
-label-focused-padding = ${module/bspwm.label-focused-padding}
+label-focused-foreground = ${colors.blue}
+label-focused-background = #000000
+label-focused-underline = #ff019a
+label-focused-padding = 4
 
-; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%
-label-unfocused-padding = ${module/bspwm.label-occupied-padding}
-
-; visible = Active workspace on unfocused monitor
+label-unfocused-padding = 4
 label-visible = %index%
-label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
-label-visible-padding = ${self.label-focused-padding}
+label-visible-underline = #555555
+label-visible-padding = 4
 
-; urgent = Workspace with urgency hint set
 label-urgent = %index%
-label-urgent-background = ${module/bspwm.label-urgent-background}
-label-urgent-padding = ${module/bspwm.label-urgent-padding}
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = 4
 
-; Separator in between workspaces
-; label-separator = |
+;label-separator = |
+label-separator-padding = 2
+label-separator-foreground = #9b00e8
 
 
 [module/mpd]
@@ -258,10 +258,10 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume =   %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
+label-muted =  muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
@@ -367,27 +367,28 @@ type = custom/menu
 expand-right = true
 
 format-spacing = 1
+;format-underline = #f90000
 
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close =  cancel
-label-close-foreground = ${colors.secondary}
+label-open = 
+label-open-foreground = ${colors.white}
+label-close = CANCEL
+label-close-foreground = ${colors.blue}
 label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+label-separator-foreground = ${colors.blue}
 
-menu-0-0 = reboot
+menu-0-0 = REBOOT
 menu-0-0-exec = menu-open-1
-menu-0-1 = power off
+menu-0-1 = SHUTDOWN
 menu-0-1-exec = menu-open-2
 
-menu-1-0 = cancel
+menu-1-0 = CANCEL
 menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
+menu-1-1 = REBOOT
 menu-1-1-exec = sudo reboot
 
-menu-2-0 = power off
+menu-2-0 = SHUTDOWN
 menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
+menu-2-1 = CANCEL
 menu-2-1-exec = menu-open-0
 
 [settings]
