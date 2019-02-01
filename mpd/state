@@ -1,0 +1,23 @@
+sw_volume: 72
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: play
+current: 7
+time: 59.215000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:2011- The Destroyers Of All/07. The Destroyers Of All - Ulcerate.mp3
+1:2011- The Destroyers Of All/01. Burning Skies - Ulcerate.mp3
+2:2011- The Destroyers Of All/02. Dead Oceans - Ulcerate.mp3
+3:2011- The Destroyers Of All/03. Cold Becoming - Ulcerate.mp3
+4:2011- The Destroyers Of All/04. Beneath - Ulcerate.mp3
+5:2011- The Destroyers Of All/05. The Hollow Idols - Ulcerate.mp3
+6:2011- The Destroyers Of All/06. Omens - Ulcerate.mp3
+7:2011- The Destroyers Of All/07. The Destroyers Of All - Ulcerate.mp3
+playlist_end
