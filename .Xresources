@@ -2,6 +2,8 @@ URxvt.font: xft:SourceCodePro:size=10
 URxvt.scrollBar: false
 URxvt.background: [90]#000000
 URxvt.foreground: #FFFFFF
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0200/c800
 URxvt.cursorColor: white
 URxvt*color0:  #000000 // black
 URxvt*color1:  #B40000 // red
