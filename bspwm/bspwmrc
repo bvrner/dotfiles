@@ -26,3 +26,4 @@ $HOME/.config/polybar/launch.sh
 compton
 feh --bg-scale ~/Imagens/e3vx0LK.png
 discord
+mpd
