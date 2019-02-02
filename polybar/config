@@ -58,7 +58,7 @@ font-5 = "Font Awesome 5 Free:style=Solid:size=10;-1"
 font-6 = "Font Awesome 5 Brands:style=Regular:size=10;-1"
 
 modules-left = bspwm
-modules-center = player-cmus mpd
+modules-center = 
 modules-right = date pulseaudio-tail powermenu 
 
 tray-position = right
@@ -199,50 +199,6 @@ menu-2-0 = SURE?
 menu-2-0-exec = sudo poweroff
 menu-2-0-padding = 3
 
-[module/date]
-type = internal/date
-
-interval = 1.0
-date = %Y-%m-%d%
-
-time = %H:%M
-
-date-alt = %A, %d %B %Y
-time-alt = %H:%M:%S
-
-format =    <label>
-format-background = #0d0d0d
-format-foreground = #fff
-
-label = %time%
-label-font = 3
-label-foreground = #FFFFFF
-
-[module/date-alt]
-type = internal/date
-
-; Seconds to sleep between updates
-interval = 1.0
-
-; See "man date" for details on how to format the date string
-; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = %a %b %d, 
-
-; Optional time format
-time = %H:%M
-
-; if `date-alt` or `time-alt` is defined, clicking
-; the module will toggle between formats
-date-alt = %A, %d %B %Y
-time-alt = %H:%M:%S
-
-label = %date% %time%
-format =    <label>
-;format-background = #ddffffff
-format-background = #88000000
-;format-foreground = #333
-format-padding = 3
-
 [module/player-cmus]
 type = custom/script
 exec = ~/polybar-scripts/player-cmus.sh
@@ -281,42 +237,16 @@ label-indicator-background = #8139e8
 [module/mpd]
 type = internal/mpd
 
-; Host where mpd is running (either ip or domain name)
-; Can also be the full path to a unix socket where mpd is running.
 host = 127.0.0.1
 port = 6600
 password = mysecretpassword
 
-; Seconds to sleep between progressbar/song timer sync
-; Default: 1
-interval = 2
+interval = 1
 
 format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
-;format-playing = ${self.format-online}
-;format-paused = ${self.format-online}
-;format-stopped = ${self.format-online}
 
-; Available tags:
-;   <label-offline>
-;format-offline = <label-offline>
-
-; Available tokens:
-;   %artist%
-;   %album-artist%
-;   %album%
-;   %date%
-;   %title%
-; Default: %artist% - %title%
 label-song = 𝄞 %artist% - %title%
 
-; Available tokens:
-;   %elapsed%
-;   %total%
-; Default: %elapsed% / %total%
-;label-time = %elapsed% / %total%
-
-; Available tokens:
-;   None
 label-offline = 🎜 mpd is offline
 
 ; Only applies if <icon-X> is used
@@ -333,12 +263,9 @@ icon-repeatone = 🔂
 icon-single = 🔂
 icon-consume = ✀
 
-; Used to display the state of random/repeat/repeatone/single
-; Only applies if <icon-[random|repeat|repeatone|single]> is used
 toggle-on-foreground = #ff
 toggle-off-foreground = #55
 
-; Only applies if <bar-progress> is used
 bar-progress-width = 45
 bar-progress-indicator = |
 bar-progress-fill = ─
@@ -354,19 +281,11 @@ blacklist-1 = scroll lock
 format = <label-layout> <label-indicator>
 format-spacing = 0
 
-; Available tokens:
-;   %layout%
-;   %name%
-;   %number%
-; Default: %layout%
 label-layout = %name%
 label-layout-padding = 2
 label-layout-background = #bc99ed
 label-layout-foreground = #000
 
-; Available tokens:
-;   %name%
-; Default: %name%
 label-indicator = %name%
 label-indicator-padding = 2
 label-indicator-background = #8139e8
