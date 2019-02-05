@@ -2,7 +2,8 @@
 set ruler laststatus=2 number title hlsearch autoindent showtabline=2 nocp
 syntax on
 filetype indent plugin on
-colorscheme jellybeans
+colorscheme darkk
+let g:airline_theme ='violet'
 execute pathogen#infect()
 
 set statusline+=%#warningmsg#
@@ -22,7 +23,7 @@ set tags+=~/.vim/tags/sdl2
 
 " build tags of your own project with Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-
+nnoremap <F12> :NERDTreeToggle<CR>
 " OmniCppComplete
 let OmniCpp_NamespaceSearch = 1
 let OmniCpp_GlobalScopeSearch = 1

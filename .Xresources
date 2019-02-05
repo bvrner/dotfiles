@@ -1,3 +1,4 @@
+!URXVT CONFIGURATION
 URxvt.font: xft:SourceCodePro:size=10
 URxvt.scrollBar: false
 URxvt.background: [90]#000000
@@ -21,3 +22,11 @@ URxvt*color12: #6464FF // blue
 URxvt*color13: #FF00FF // magenta
 URxvt*color14: #00FFFF // cyan
 URxvt*color15: #FFFFFF // white
+
+!ROFI CONFIGURATION
+!rofi.color-enabled: true
+!rofi.color-window: #273238, #273238, #1e2529
+!rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+!rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+!rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+rofi.theme: theme
