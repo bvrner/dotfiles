@@ -218,31 +218,6 @@ label = %time%
 label-font = 3
 label-foreground = #FFFFFF
 
-[module/date-alt]
-type = internal/date
-
-; Seconds to sleep between updates
-interval = 1.0
-
-; See "man date" for details on how to format the date string
-; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = %a %b %d, 
-
-; Optional time format
-time = %H:%M
-
-; if `date-alt` or `time-alt` is defined, clicking
-; the module will toggle between formats
-date-alt = %A, %d %B %Y
-time-alt = %H:%M:%S
-
-label = %date% %time%
-format =    <label>
-;format-background = #ddffffff
-format-background = #88000000
-;format-foreground = #333
-format-padding = 3
-
 [module/player-cmus]
 type = custom/script
 exec = ~/polybar-scripts/player-cmus.sh
@@ -310,30 +285,3 @@ bar-progress-width = 45
 bar-progress-indicator = |
 bar-progress-fill = ─
 bar-progress-empty = ─
-
-;[module/keyboard]
-;type = internal/xkeyboard
-
-; List of indicators to ignore
-;blacklist-0 = num lock
-;blacklist-1 = scroll lock
-
-;format = <label-layout> <label-indicator>
-;format-spacing = 0
-
-; Available tokens:
-;   %layout%
-;   %name%
-;   %number%
-; Default: %layout%
-;label-layout = %name%
-;label-layout-padding = 2
-;label-layout-background = #bc99ed
-;label-layout-foreground = #000
-
-; Available tokens:
-;   %name%
-; Default: %name%
-;label-indicator = %name%
-;label-indicator-padding = 2
-;label-indicator-background = #8139e8
