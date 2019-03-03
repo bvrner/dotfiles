@@ -2,7 +2,7 @@
 set ruler laststatus=2 number title hlsearch autoindent showtabline=2 nocp
 syntax on
 filetype indent plugin on
-colorscheme kxxe
+colorscheme behelit
 set background=dark
 
 let g:airline_theme ='deus'
@@ -16,6 +16,11 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+
 map <F12> :NERDTreeToggle<CR>﻿
 
 let g:syntastic_always_populate_loc_list = 1
@@ -23,18 +28,16 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-set noinfercase
-set completeopt-=preview
-set completeopt+=menuone
-let g:clang_library_path='/usr/lib64/libclang.so.7'
-let g:clang_user_options = '-std=c++14'
-" let g:clang_complete_auto = 1
-let g:mucomplete#completion_delay = 1
-let g:mucomplete#enable_auto_at_startup = 1
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_semantic_triggers =  { 'cpp,objcpp' : ['->', '.', '::', 'gl'] }
+let g:ycm_collect_identifiers_from_tag_files = 1
+set completeopt=longest,menu
+
 
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview

@@ -1,0 +1,201 @@
+[options]
+#allow_bold = true
+#audible_bell = false
+#bold_is_bright = true
+#clickable_url = true
+#dynamic_title = true
+font = Source Code Pro for Powerline 10
+font = xos4 Terminus 10
+font = Droid Sans Mono for Powerline 10
+#fullscreen = true
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+#hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
+
+# "system", "on" or "off"
+#cursor_blink = system
+
+# "block", "underline" or "ibeam"
+#cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+# "off", "left" or "right"
+#scrollbar = off
+
+[colors]
+
+#foreground          = #FFFFFF
+#foreground_bold     = #FFFFFF
+#cursor              = #e3e3e3
+#cursor_foreground   = #101010
+#background          = rgba(8, 6, 5, 1)
+
+# 16 color space
+
+# Black, Gray, Silver, White
+#color0  = #101010
+#color8  = #525252
+#color7  = #b9b9b9
+#color15 = #f7f7f7
+
+# Red
+#color1  = #B40000
+#color9  = #FF0000
+
+# Green
+#color2  = #00AA00
+#color10 = #00FF00
+
+# Yellow
+#color3  = #AAAA00 
+#color11 = #FFFF00
+
+# Blue
+#color4  = #00afff
+#color12 = #6464FF
+
+# Purple
+#color5  = #AA00AA  
+#color13 = #FF00FF 
+
+# Teal
+#color6  = #868686
+#color14 = #868686
+
+# Extra colors
+#color16 = #999999
+#color17 = #5e5e5e
+#color18 = #252525
+#color19 = #464646
+#color20 = #ababab
+#color21 = #e3e3e3
+
+# special
+#foreground=   #a49b9e
+#background=   #040404
+#cursorColor=  #a49b9e
+
+# black
+#color0=       #0a0607
+#color8=       #850223
+
+# red
+#color1=       #1b1315
+#color9=       #225268
+
+# green
+#color2=       #2f2427
+#color10=      #cfa15c
+
+# yellow
+#color3=       #4b3b3f
+#color11=      #2b4540
+
+# blue
+#color4=       #6f585e
+#color12=      #ee6393
+
+# magenta
+#color5=       #9b7c84
+#color13=      #d2a04c
+
+# cyan
+#color6=       #bdacb0
+#color14=      #2d0d07
+
+# white
+#color7=       #e6e1e2
+#color15=      #a1843f
+#
+
+
+#background:  #282F37
+#foreground:  #F1FCF9
+#cursorColor: #F1FCF9
+#color0=      #20262C
+#color1=      #DB86BA
+#color2=      #74DD91
+#color3=      #E49186
+#color4=      #75DBE1
+#color5=      #B4A1DB
+#color6=      #9EE9EA
+#color7=      #F1FCF9
+#color8=      #465463
+#color9=      #D04E9D
+#color10=     #4BC66D
+#color11=     #DB695B
+#color12=     #3DBAC2
+#color13=     #825ECE
+#color14=     #62CDCD
+#color15=     #E0E5E5
+
+# special
+foreground=   #d6c2ba
+background=   #090000
+cursorColor=  #d6c2ba
+
+# black
+color0=       #090000
+color8=       #86726a
+
+# red
+color1=       #ae483f
+color9=       #ae483f
+
+# green
+color2=       #704322
+color10=      #704322
+
+# yellow
+color3=       #955e2c
+color11=      #955e2c
+
+# blue
+color4=       #704322
+color12=      #704322
+
+# magenta
+color5=       #ae483f
+color13=      #ae483f
+
+# cyan
+color6=       #825027
+color14=      #825027
+
+# white
+color7=       #d6c2ba
+color15=      #d6c2ba
+
+
+
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
