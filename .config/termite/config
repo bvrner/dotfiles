@@ -42,6 +42,8 @@ scrollback_lines = 10000
 
 [colors]
 
+#This section is just a mess, I know
+
 #foreground          = #FFFFFF
 #foreground_bold     = #FFFFFF
 #cursor              = #e3e3e3
@@ -49,7 +51,7 @@ scrollback_lines = 10000
 #background          = rgba(8, 6, 5, 1)
 
 # 16 color space
-
+#Standart colorscheme, the one from my main config
 # Black, Gray, Silver, White
 #color0  = #101010
 #color8  = #525252
@@ -93,109 +95,23 @@ scrollback_lines = 10000
 #background=   #040404
 #cursorColor=  #a49b9e
 
-# black
-#color0=       #0a0607
-#color8=       #850223
-
-# red
-#color1=       #1b1315
-#color9=       #225268
-
-# green
-#color2=       #2f2427
-#color10=      #cfa15c
-
-# yellow
-#color3=       #4b3b3f
-#color11=      #2b4540
-
-# blue
-#color4=       #6f585e
-#color12=      #ee6393
-
-# magenta
-#color5=       #9b7c84
-#color13=      #d2a04c
-
-# cyan
-#color6=       #bdacb0
-#color14=      #2d0d07
-
-# white
-#color7=       #e6e1e2
-#color15=      #a1843f
-#
-
-
-#background:  #282F37
-#foreground:  #F1FCF9
-#cursorColor: #F1FCF9
-#color0=      #20262C
-#color1=      #DB86BA
-#color2=      #74DD91
-#color3=      #E49186
-#color4=      #75DBE1
-#color5=      #B4A1DB
-#color6=      #9EE9EA
-#color7=      #F1FCF9
-#color8=      #465463
-#color9=      #D04E9D
-#color10=     #4BC66D
-#color11=     #DB695B
-#color12=     #3DBAC2
-#color13=     #825ECE
-#color14=     #62CDCD
-#color15=     #E0E5E5
-
-# special
-foreground=   #d6c2ba
-background=   #090000
-cursorColor=  #d6c2ba
-
-# black
-color0=       #090000
-color8=       #86726a
-
-# red
-color1=       #ae483f
-color9=       #ae483f
-
-# green
-color2=       #704322
-color10=      #704322
-
-# yellow
-color3=       #955e2c
-color11=      #955e2c
-
-# blue
-color4=       #704322
-color12=      #704322
-
-# magenta
-color5=       #ae483f
-color13=      #ae483f
-
-# cyan
-color6=       #825027
-color14=      #825027
-
-# white
-color7=       #d6c2ba
-color15=      #d6c2ba
-
-
-
-
-[hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 0.5
-#roundness = 2.0
-
-# vim: ft=dosini cms=#%s
+###############################################################33
+#Alt config colorscheme (the one I've been using lately
+background=  rgba(0, 0, 0, 0.9)
+foreground=  #d3dae3
+color0=  #29334f
+color1=  #fe6d3c
+color2=  #6ba877
+color3=  #af9a14
+color4=  #679ee1
+color5=  #bc8ac0
+color6=  #6ea59a
+color7=  #a397a3
+color8=  #352f53
+color9=  #df825b
+color10=  #7aa751
+color11=  #ba9544
+color12=  #3ba1f2
+color13=  #c97ee1
+color14=  #52a6bb
+color15=  #9b99a8
