@@ -21,10 +21,14 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Thunar desktop=^4 
 bspc rule -a discord desktop=^1
 bspc rule -a Spotify desktop=^6
+bspc rule -a steam-runtime desktop=^5
 bspc rule -a steam-native desktop=^5
+bspc rule -a steam desktop=^5
+bspc rule -a Steam desktop=^5
 
-feh --bg-scale ~/.wallpaper.jpg
+feh --bg-scale ~/Imagens/wolf_silhouette_hills_130119_1920x1080.jpg 
 $HOME/.config/polybar/launch.sh
 compton &
 discord &
-mpd
+mpd &
+steam-runtime
