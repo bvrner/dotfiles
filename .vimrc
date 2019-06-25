@@ -1,10 +1,8 @@
 " Plugins
 " Pathogen
-" Nerdtree
-" Syntastic
+" Nerdtree " Syntastic
 " Airline
-" Cpp Enhanced Highlight
-" Lua ftp-plugin
+" Cpp Enhanced Highlight " Lua ftp-plugin
 " Ultisnips
 " Vim snippets
 " YouCompleteMe
@@ -50,15 +48,26 @@ let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 
-map <F12> :NERDTreeToggle<CR>﻿
+nmap <F12> :NERDTreeToggle<CR>﻿
+imap <F12> <Esc>:NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
+nmap <F4> @='^I//<C-V><Esc>j'<CR>
+nmap <F2> :w<CR>
+imap <F2> <Esc>:w<CR>i
+nmap <F3> :wq<CR>
+imap <F3> <Esc>:wq<CR>i
+nmap J 5j
+nmap H ^
+nmap K 5k
+nmap L $
+nmap ; @='A;<C-V><Esc>^j'<CR>
 
-autocmd FileType rust map <buffer> <F5> :!cargo build<CR>
-autocmd FileType rust map <buffer> <F6> :RustFmt<CR>
-autocmd FileType rust map <buffer> <F7> :!cargo run<CR>
+autocmd FileType rust nmap <buffer> <F5> :w<CR> :!cargo build<CR>
+autocmd FileType rust nmap <buffer> <F6> :w<CR> :!cargo run<CR>
+autocmd FileType rust nmap <buffer> <F7> :w<CR> :!cargo test<CR>
 
-autocmd FileType c map <buffer> <F4> :!clang %<CR>  
-autocmd FileType c map <buffer> <F5> :make<CR>
+autocmd FileType c nmap <buffer> <F5> :!clang %<CR>  
+autocmd FileType c nmap <buffer> <F6> :make<CR>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1

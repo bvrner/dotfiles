@@ -26,7 +26,7 @@ bspc rule -a steam-native desktop=^5
 bspc rule -a steam desktop=^5
 bspc rule -a Steam desktop=^5
 
-feh --bg-scale ~/Imagens/wolf_silhouette_hills_130119_1920x1080.jpg 
+feh --bg-scale ~/.wallpaper.jpg 
 $HOME/.config/polybar/launch.sh
 compton &
 discord &
