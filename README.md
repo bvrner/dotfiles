@@ -2,14 +2,6 @@
 
 Just my personal dotfiles for polybar, i3-gaps/bspwm, mpd, ncmpcpp, urxvt, termite, Vim and everything else.
 
-# bpswm with main polybar config 
+![Captura de tela de 2019-08-08 20-37-26](https://user-images.githubusercontent.com/46679706/62747938-10d1f280-ba2d-11e9-836b-22919e0e7aa7.png)
 
-![captura de tela de 2019-02-01 22-16-46](https://user-images.githubusercontent.com/46679706/52156667-bf593d00-2670-11e9-9916-97ba256c9758.png)
-
-A synthwave-ish inspired rice
-
-# bspwm with my alt polybar config 
-
-![captura de tela de 2019-03-06 15-26-07](https://user-images.githubusercontent.com/46679706/53904271-693b3900-4024-11e9-938c-24ec72f5ad4b.png)
-
-Based on Jaagr's space polybar theme
+The polybar is based on Jaagr's space theme
