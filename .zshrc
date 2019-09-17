@@ -74,6 +74,8 @@ plugins=(
   sudo
 )
 source $ZSH/oh-my-zsh.sh
+source ~/.cache/wal/colors-tty.sh
+(cat ~/.cache/wal/sequences &)
 
 # User configuration
 
@@ -104,5 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias yay="yay --noconfirm"
-alias redshift="redshift -l 16.028721:-47.987101"
+alias rs="redshift -l 16.028721:-47.987101"
 alias music="ncmpcpp"
+

@@ -5,6 +5,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-syntastic/syntastic'
 " Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'vim-airline/vim-airline-themes'
+Plug 'wakatime/vim-wakatime'
 Plug 'mhinz/vim-signify'
 Plug 'vim-airline/vim-airline'
 Plug 'Shougo/neoinclude.vim'
@@ -73,6 +74,7 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " au BufWrite * :Autoformat
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 autocmd FileType rust map <buffer> <F5> :w<CR> :!cargo build<CR>
 autocmd FileType rust map <buffer> <F6> :w<CR> :!cargo run<CR>

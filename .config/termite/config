@@ -42,8 +42,6 @@ scrollback_lines = 10000
 
 [colors]
 
-#This section is just a mess, I know
-
 #foreground          = #FFFFFF
 #foreground_bold     = #FFFFFF
 #cursor              = #e3e3e3
@@ -51,7 +49,7 @@ scrollback_lines = 10000
 #background          = rgba(8, 6, 5, 1)
 
 # 16 color space
-#Standart colorscheme, the one from my main config
+
 # Black, Gray, Silver, White
 #color0  = #101010
 #color8  = #525252
@@ -95,23 +93,204 @@ scrollback_lines = 10000
 #background=   #040404
 #cursorColor=  #a49b9e
 
-###############################################################33
-#Alt config colorscheme (the one I've been using lately
-background=  rgba(0, 0, 0, 0.9)
-foreground=  #d3dae3
-color0=  #29334f
-color1=  #fe6d3c
-color2=  #6ba877
-color3=  #af9a14
-color4=  #679ee1
-color5=  #bc8ac0
-color6=  #6ea59a
-color7=  #a397a3
-color8=  #352f53
-color9=  #df825b
-color10=  #7aa751
-color11=  #ba9544
-color12=  #3ba1f2
-color13=  #c97ee1
-color14=  #52a6bb
-color15=  #9b99a8
+# black
+#color0=       #0a0607
+#color8=       #850223
+
+# red
+#color1=       #1b1315
+#color9=       #225268
+
+# green
+#color2=       #2f2427
+#color10=      #cfa15c
+
+# yellow
+#color3=       #4b3b3f
+#color11=      #2b4540
+
+# blue
+#color4=       #6f585e
+#color12=      #ee6393
+
+# magenta
+#color5=       #9b7c84
+#color13=      #d2a04c
+
+# cyan
+#color6=       #bdacb0
+#color14=      #2d0d07
+
+# white
+#color7=       #e6e1e2
+#color15=      #a1843f
+#
+
+#background=  rgba(0, 0, 0, 0.9)
+#foreground=  #d3dae3
+#color0=  #29334f
+#color1=  #fe6d3c
+#color2=  #6ba877
+#color3=  #af9a14
+#color4=  #679ee1
+#color5=  #bc8ac0
+#color6=  #6ea59a
+#color7=  #a397a3
+#color8=  #352f53
+#color9=  #df825b
+#color10=  #7aa751
+#color11=  #ba9544
+#color12=  #3ba1f2
+#color13=  #c97ee1
+#color14=  #52a6bb
+#color15=  #9b99a8
+
+background = rgba(0, 0, 0, 0.9)
+foreground =  #ffffff
+color0 =  #000000
+color1 =  #c50133
+color2 =  #333162
+color3 =  #d9a1be
+color4 = #333162
+color5 = #cd387a
+color6 = #d9a1be
+color7 = #e3c7de
+color8 = #705f81
+color9 = #f90135
+color10 = #333162
+color11 = #ff7da6
+color12 = #a26b92
+color13 = #f90135
+color14 = #d5193c
+color15 = #ffffff
+
+# special
+#foreground      = #c5c8c6
+#foreground_bold = #c5c8c6
+#cursor          = #c5c8c6
+#background      = #1d1f21
+
+# black
+#color0  = #282a2e
+#color8  = #373b41
+
+# red
+#color1  = #a54242
+#color9  = #cc6666
+
+# green
+#color2  = #8c9440
+#color10 = #b5bd68
+
+# yellow
+#color3  = #de935f
+#color11 = #f0c674
+
+# blue
+#color4  = #5f819d
+#color12 = #81a2be
+
+# magenta
+#color5  = #85678f
+#color13 = #b294bb
+
+# cyan
+#color6  = #5e8d87
+#color14 = #8abeb7
+
+# white
+#color7  = #707880
+#color15 = #c5c8c6
+
+
+
+# special
+#foreground=   #d6c2ba
+#background=   #090000
+#cursorColor=  #d6c2ba
+
+# black
+#color0=       #090000
+#color8=       #86726a
+
+# red
+#color1=       #ae483f
+#color9=       #ae483f
+
+# green
+#color2=       #704322
+#color10=      #704322
+
+# yellow
+#color3=       #955e2c
+#color11=      #955e2c
+
+# blue
+#color4=       #704322
+#color12=      #704322
+
+# magenta
+#color5=       #ae483f
+#color13=      #ae483f
+
+# cyan
+#color6=       #825027
+#color14=      #825027
+
+# white
+#color7=       #d6c2ba
+#color15=      #d6c2ba
+
+
+
+# special
+#foreground=   #ffffff
+#background=   rgba(0, 0, 0, .9)
+#cursorColor=  #a49b9e
+
+# black
+#color0=       #000000
+#color8=       #795d76
+
+# red
+#color1=       #c70100
+#color9=       #c70100
+
+# green
+#color2=       #009ea6
+#color10=      #009ea6
+
+# yellow
+#color3=       #d36f1a
+#color11=      #d36d1a
+
+# blue
+#color4=       #007bb4
+#color12=      #3ba5cd
+
+# magenta
+#color5=       #fb1ba0
+#color13=      #gb1ba0
+
+# cyan
+#color6=       #04ced2
+#color14=      #04ced2
+
+# white
+#color7=       #e3deda
+#color15=      #ffffff
+
+
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
