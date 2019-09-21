@@ -1,0 +1,23 @@
+[global]
+geometry = "300x60-10-35"
+format = %s\n%b
+padding = 32
+horizontal_padding = 32
+
+[urgency_low]
+timeout = 4
+background = "#111111"
+foreground = "#555555"
+frame_color = "#333333"
+
+[urgency_normal]
+timeout = 4
+background = "#111111"
+foreground = "#555555"
+frame_color = "#333333"
+
+[urgency_critical]
+timeout = 0
+background = "#111111"
+foreground = "#555555"
+frame_color = "#333333"
